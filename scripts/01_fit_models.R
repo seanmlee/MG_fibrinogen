@@ -5,6 +5,7 @@ library(tidyverse)
 
 # load data --------------------------------------------------------------------
 fib <- read.csv("data/fib.csv", header = TRUE)
+storage <- read.csv("data/storage.csv", header = TRUE)
 
 
 # divvy data -------------------------------------------------------------------
@@ -64,3 +65,13 @@ mod_fgg <- lm(
 )
 summary(mod_fgg)
 plot(resid(mod_fgg))
+
+
+# mod_storage ----------------------------------------------------------------
+mod_storage <- lm(
+  log(value) ~ 
+    treatment,
+  storage
+)
+summary(mod_storage)
+plot(resid(mod_storage))
