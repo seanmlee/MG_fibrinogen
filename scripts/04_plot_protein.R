@@ -333,7 +333,7 @@ fit %>%
       ymin = lwr_response,
       ymax = upr_response
     ),
-    width = 0.4,
+    width = 0.5,
     size = 0.5,
     position = position_dodge(width = 0.5)
     
@@ -350,8 +350,8 @@ fit %>%
   scale_y_continuous(
     
     labels = scales::comma,
-    limits = c(10, 22),
-    breaks = seq(10, 22, 2)
+    limits = c(0, 24),
+    breaks = seq(0, 24, 2)
     
   ) +
   
@@ -364,12 +364,12 @@ fit %>%
   labs(shape = "") +
   
   scale_x_discrete(
-    labels = c("fga" = "Fibrinogen α", "fgb" = "Fibrinogen β", "fgg" = "Fibrinogen δ")
+    labels = c("fga" = "Fibrinogen-α", "fgb" = "Fibrinogen-β", "fgg" = "Fibrinogen-δ")
   ) +
   
   scale_shape_manual(
     values = c("control" = 21, "mg" = 22),
-    labels = c("Control", "MG")
+    labels = c("Control (n=37)", "MG (n=86)")
   ) +
   
   theme_bw() +
@@ -390,19 +390,19 @@ fit %>%
   
   geom_signif(
     
-    y_position = 21.7, 
+    y_position = 23.2, 
     xmin = 0.875,
     xmax = 1.125,
-    annotation = "n.s.", 
+    annotation = "p=0.349", 
     tip_length = 0.005,
     color = "black",
-    textsize = 7
+    textsize = 6
     
   ) +
   
   geom_signif(
     
-    y_position = 21.7, 
+    y_position = 23.2, 
     xmin = 1.875,
     xmax = 2.125,
     annotation = "p=0.002", 
@@ -414,7 +414,7 @@ fit %>%
   
   geom_signif(
     
-    y_position = 21.7, 
+    y_position = 23.3, 
     xmin = 2.875,
     xmax = 3.125,
     annotation = "p=0.003", 
@@ -430,6 +430,6 @@ ggsave(
   
   "out/plot_protein.png",
   height = 5,
-  width = 7.5
+  width = 8
   
 )

@@ -150,7 +150,7 @@ fit %>%
   scale_y_continuous(
     
     labels = scales::comma,
-    limits = c(0, 5000)
+    limits = c(0, 10000)
     
   ) +
   
@@ -163,8 +163,8 @@ fit %>%
   labs(shape = "") +
   
   scale_x_discrete(
-    labels = c("Control", "MG")
-  ) +
+    labels = c("Control (n=14)", "MG (n=51)")
+    ) +
   
   scale_shape_manual(
     values = c("control" = 21, "mg" = 22),
@@ -189,10 +189,10 @@ fit %>%
   
   geom_signif(
     
-    y_position = 4800, 
+    y_position = 9800, 
     xmin = 1,
     xmax = 2,
-    annotation = "n.s.", 
+    annotation = "p=0.389", 
     tip_length = 0.005,
     color = "black",
     textsize = 5.5,
@@ -205,7 +205,7 @@ fit %>%
 ggsave(
   
   "out/plot_fib_serum.png",
-  height = 3.5,
-  width = 4
+  height = 5,
+  width = 5
   
 )

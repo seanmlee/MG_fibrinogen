@@ -164,8 +164,8 @@ fit %>%
   labs(shape = "") +
   
   scale_x_discrete(
-    labels = c("Control", "MG")
-  ) +
+    labels = c("Control (n=10)", "MG (n=20)")
+    ) +
   
   scale_shape_manual(
     values = c("control" = 21, "mg" = 22),
@@ -207,6 +207,6 @@ ggsave(
   
   "out/plot_fib_plasma.png",
   height = 3.5,
-  width = 4
+  width = 4.5
   
 )
