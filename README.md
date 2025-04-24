@@ -1,10 +1,11 @@
 ## Serum Fibrinogen is not elevated in patients with myasthenia gravis
 
-<strong>Taylor Bauman, et al. <em>Manuscript submitted for review</em></strong>
+<strong>Full citation:</strong>
+Bauman, Taylor A., Sean M. Lee, Vern C. Juel, Yingkai Li, Karli Gilbert, Jiaxin Chen, Henry J. Kaminski, Linda L. Kusner, and MGNet Investigators. <strong>"Serum fibrinogen is not elevated in patients with myasthenia gravis."</strong> <em>Scientific Reports</em> 15, no. 1 (2025): 13013. 
 
-This repository contains reproducible code for our research manuscript titled "Serum Fibrinogen is not elevated in patients with myasthenia gravis." We will provide the full citation upon publication.
+<strong>DOI:</strong> https://doi.org/10.1038/s41598-025-97599-8 
 
-<strong>We will publish final updates to code and `.README` upon publication</strong>
+This repository contains data and reproducible code for the manuscript cited above.
 <br>  
 <br>  
 
